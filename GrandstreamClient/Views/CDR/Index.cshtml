@@ -1,0 +1,741 @@
+﻿@model IEnumerable<GrandstreamClient.Models.CDR>
+
+@{
+    ViewData["Title"] = "CDR";
+}
+
+<h1>CDR Database</h1>
+
+<table class="table" style="align-self:start">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.cdr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AcctId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.accountcode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.src)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dst)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dcontext)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.clid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.channel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dstchannel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.lastapp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.lastdata)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.start)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.answer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.end)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.duration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.billsec)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.disposition)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.amaflags)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.uniqueid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.userfield)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.channel_ext)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dstchannel_ext)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.service)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.caller_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.recordfiles)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dstanswer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.chanext)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dstchanext)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.session)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.action_owner)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.action_type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.src_trunk_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dst_trunk_name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.cdr)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AcctId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.accountcode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.src)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dst)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dcontext)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.clid)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.channel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dstchannel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.lastapp)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.lastdata)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.start)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.answer)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.end)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.duration)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.billsec)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.disposition)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.amaflags)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.uniqueid)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.userfield)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.channel_ext)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dstchannel_ext)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.service)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.caller_name)
+                </td>
+                <td>
+                    <a href="@Html.DisplayFor(modelItem => item.recordfiles)" target="_blank">@Html.DisplayFor(modelItem => item.recordfiles)</a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dstanswer)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.chanext)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dstchanext)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.session)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.action_owner)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.action_type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.src_trunk_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dst_trunk_name)
+                </td>
+            </tr>
+            @if (item.main_cdr != null)
+            {
+                <tr style="background-color:#EEEEEE">
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.cdr)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.AcctId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.accountcode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.src)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.dst)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.dcontext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.clid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.channel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.dstchannel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.lastapp)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.lastdata)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.start)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.answer)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.end)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.duration)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.billsec)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.disposition)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.amaflags)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.uniqueid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.userfield)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.channel_ext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.dstchannel_ext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.service)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.caller_name)
+                    </td>
+                    <td>
+                        <a href="@Html.DisplayFor(modelItem => item.main_cdr.recordfiles)" target="_blank">@Html.DisplayFor(modelItem => item.main_cdr.recordfiles)</a>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.dstanswer)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.chanext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.dstchanext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.session)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.action_owner)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.action_type)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.src_trunk_name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.main_cdr.dst_trunk_name)
+                    </td>
+                </tr>
+            }
+            @if (item.sub_cdr_1 != null)
+            {
+                <tr style="background-color:#EEEEEE">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.cdr)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.AcctId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.accountcode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.src)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.dst)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.dcontext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.clid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.channel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.dstchannel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.lastapp)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.lastdata)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.start)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.answer)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.end)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.duration)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.billsec)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.disposition)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.amaflags)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.uniqueid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.userfield)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.channel_ext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.dstchannel_ext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.service)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.caller_name)
+                    </td>
+                    <td>
+                        <a href="@Html.DisplayFor(modelItem => item.sub_cdr_1.recordfiles)" target="_blank">@Html.DisplayFor(modelItem => item.sub_cdr_1.recordfiles)</a>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.dstanswer)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.chanext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.dstchanext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.session)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.action_owner)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.action_type)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.src_trunk_name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_1.dst_trunk_name)
+                    </td>
+                </tr>
+            }
+            @if (item.sub_cdr_2 != null)
+            {
+                <tr style="background-color:#EEEEEE">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.cdr)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.AcctId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.accountcode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.src)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.dst)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.dcontext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.clid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.channel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.dstchannel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.lastapp)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.lastdata)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.start)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.answer)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.end)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.duration)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.billsec)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.disposition)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.amaflags)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.uniqueid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.userfield)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.channel_ext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.dstchannel_ext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.service)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.caller_name)
+                    </td>
+                    <td>
+                        <a href="@Html.DisplayFor(modelItem => item.sub_cdr_2.recordfiles)" target="_blank">@Html.DisplayFor(modelItem => item.sub_cdr_2.recordfiles)</a>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.dstanswer)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.chanext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.dstchanext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.session)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.action_owner)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.action_type)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.src_trunk_name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_2.dst_trunk_name)
+                    </td>
+                </tr>
+            }
+            @if (item.sub_cdr_3 != null)
+            {
+                <tr style="background-color:#EEEEEE">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.cdr)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.AcctId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.accountcode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.src)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.dst)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.dcontext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.clid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.channel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.dstchannel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.lastapp)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.lastdata)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.start)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.answer)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.end)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.duration)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.billsec)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.disposition)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.amaflags)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.uniqueid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.userfield)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.channel_ext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.dstchannel_ext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.service)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.caller_name)
+                    </td>
+                    <td>
+                        <a href="@Html.DisplayFor(modelItem => item.sub_cdr_3.recordfiles)" target="_blank">@Html.DisplayFor(modelItem => item.sub_cdr_3.recordfiles)</a>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.dstanswer)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.chanext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.dstchanext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.session)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.action_owner)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.action_type)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.src_trunk_name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_3.dst_trunk_name)
+                    </td>
+                </tr>
+            }
+            @if (item.sub_cdr_4 != null)
+            {
+                <tr style="background-color:#EEEEEE">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.cdr)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.AcctId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.accountcode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.src)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.dst)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.dcontext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.clid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.channel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.dstchannel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.lastapp)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.lastdata)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.start)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.answer)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.end)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.duration)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.billsec)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.disposition)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.amaflags)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.uniqueid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.userfield)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.channel_ext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.dstchannel_ext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.service)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.caller_name)
+                    </td>
+                    <td>
+                        <a href="@Html.DisplayFor(modelItem => item.sub_cdr_4.recordfiles)" target="_blank">@Html.DisplayFor(modelItem => item.sub_cdr_4.recordfiles)</a>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.dstanswer)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.chanext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.dstchanext)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.session)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.action_owner)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.action_type)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.src_trunk_name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sub_cdr_4.dst_trunk_name)
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

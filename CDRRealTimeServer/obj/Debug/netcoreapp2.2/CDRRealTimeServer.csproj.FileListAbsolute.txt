@@ -1,0 +1,11 @@
+C:\Users\ErnestoVM\Source\GrandstreamClient\CDRRealTimeServer\bin\Debug\netcoreapp2.2\CDRRealTimeServer.deps.json
+C:\Users\ErnestoVM\Source\GrandstreamClient\CDRRealTimeServer\bin\Debug\netcoreapp2.2\CDRRealTimeServer.runtimeconfig.json
+C:\Users\ErnestoVM\Source\GrandstreamClient\CDRRealTimeServer\bin\Debug\netcoreapp2.2\CDRRealTimeServer.runtimeconfig.dev.json
+C:\Users\ErnestoVM\Source\GrandstreamClient\CDRRealTimeServer\bin\Debug\netcoreapp2.2\CDRRealTimeServer.dll
+C:\Users\ErnestoVM\Source\GrandstreamClient\CDRRealTimeServer\bin\Debug\netcoreapp2.2\CDRRealTimeServer.pdb
+C:\Users\ErnestoVM\Source\GrandstreamClient\CDRRealTimeServer\obj\Debug\netcoreapp2.2\CDRRealTimeServer.csproj.CoreCompileInputs.cache
+C:\Users\ErnestoVM\Source\GrandstreamClient\CDRRealTimeServer\obj\Debug\netcoreapp2.2\CDRRealTimeServer.AssemblyInfoInputs.cache
+C:\Users\ErnestoVM\Source\GrandstreamClient\CDRRealTimeServer\obj\Debug\netcoreapp2.2\CDRRealTimeServer.AssemblyInfo.cs
+C:\Users\ErnestoVM\Source\GrandstreamClient\CDRRealTimeServer\obj\Debug\netcoreapp2.2\CDRRealTimeServer.dll
+C:\Users\ErnestoVM\Source\GrandstreamClient\CDRRealTimeServer\obj\Debug\netcoreapp2.2\CDRRealTimeServer.pdb
+C:\Users\ErnestoVM\Source\GrandstreamClient\CDRRealTimeServer\obj\Debug\netcoreapp2.2\CDRRealTimeServer.csprojAssemblyReference.cache
